@@ -5,8 +5,8 @@ fn main() {
 
     // Toggle between each of the parts of the workshop,
     // and also maybe trying out the pre-written solution code.
-    let use_solution = true;
-    let part = 5;
+    let use_solution = false;
+    let part = 1;
 
     if use_solution {
         match part {
@@ -15,7 +15,9 @@ fn main() {
             3 => solutions::part_3::main(),
             4 => solutions::part_4::main(),
             5 => solutions::part_5::main(),
-            _ => {}
+            _ => {
+                println!("Please ensure `part` is an integer from 1 to 5 inclusive.");
+            }
         }
     } else {
         match part {
@@ -24,7 +26,9 @@ fn main() {
             3 => parts::part_3::main(),
             4 => parts::part_4::main(),
             5 => parts::part_5::main(),
-            _ => {}
+            _ => {
+                println!("Please ensure `part` is an integer from 1 to 5 inclusive.");
+            }
         }
     }
 }
