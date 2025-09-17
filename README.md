@@ -45,7 +45,8 @@ To run your code, you would then run `cargo run --release` in the root of the ap
 
 ## After the Workshop
 
-As per **Option 1**, the Rust package that this repository contains is capable of running as-is.
+As per **Option 1**, the Rust package that this repository contains is capable of running as-is
+(that is, after the necessary crates have been imported).
 
 To test out different parts of the workshop code, change the `part` variable to see different snapshots
 of the content in action. Keep it an integer from 1 to 5 though.
